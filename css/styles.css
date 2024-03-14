@@ -42,11 +42,13 @@ img {
 
 /* General Styles */
 body {
-    background-color: var(--CLR-NEU-LIGHTGREY);
+    background-color: var(--CLR-NEU-EGGSHELL);
     height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 3.125em 0;
+    scroll-behavior: smooth;
 }
 
 /* Overall Recipe */
@@ -75,7 +77,7 @@ body {
 
 .recipe-desc {
     font-family: var(--FF-OUTFIT);
-    font-size: 14px;
+    font-size: 0.875em;
     color: var(--CLR-DARK-CHARCOAL);
 }
 
@@ -83,22 +85,22 @@ body {
 .recipe-prep {
     background-color: var(--CLR-LIGHT-PINK);
     border-radius: 0.75em;
-    padding: 25px;
-    margin-bottom: 20px;
+    padding: 1.563em;
+    margin-bottom: 1.25em;
 }
 
 .prep {
     font-family: var(--FF-OUTFIT);
-    font-size: 18px;
+    font-size: 1.125em;
     font-weight: var(--FW-600);
     color: var(--CLR-PRIMARY-DRASP);
-    margin-bottom: 5px;
+    margin-bottom: 0.313em;
 }
 
 .time {
     color: var(--CLR-WENGE-BROWN);
     font-family: var(--FF-OUTFIT);
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 
 .time li {
@@ -108,7 +110,7 @@ body {
 
 .time-title {
     font-weight: var(--FW-600);
-    margin-left: 20px;
+    margin-left: 1.25em;
     letter-spacing: 0.05em;
 }
 
@@ -117,19 +119,19 @@ body {
     font-family: var(--FF-YOUNG-SERIF);
     color: var(--CLR-PRIMARY-NUTMEG);
     font-weight: var(--FW-400);
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .ingredients {
     font-family: var(--FF-OUTFIT);
     color: var(--CLR-DARK-CHARCOAL);
-    margin-left: 20px;
-    margin-bottom: 20px;
+    margin-left: 1.25em;
+    margin-bottom: 1.25em;
 }
 
 .ingredients li {
     line-height: 1.7;
-    padding-left: 10px;
+    padding-left: 0.625em;
     color: var(--CLR-DARK-CHARCOAL);
 }
 
@@ -137,7 +139,7 @@ body {
 hr {
     color: var(--CLR-NEU-EGGSHELL);
     opacity: 45%;
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 /* Instructions Section */
@@ -145,15 +147,15 @@ hr {
     font-family: var(--FF-YOUNG-SERIF);
     font-weight: var(--FW-400);
     color: var(--CLR-PRIMARY-NUTMEG);
-    margin-bottom: 20px;
+    margin-bottom: 1.25em;
 }
 
 .cooking-instructions {
     font-family: var(--FF-OUTFIT);
     color: var(--CLR-DARK-CHARCOAL);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    font-size: 15px;
+    margin-left: 1.25em;
+    margin-bottom: 1.25em;
+    font-size: 0.938em;
 }
 
 .cooking-instructions span {
@@ -162,43 +164,35 @@ hr {
 }
 
 .cooking-instructions li {
-    padding-left: 10px;
+    padding-left: 0.625em;
 }
 
 /* Nutritional Section */
-.nutrition-facts {
-    text-align: left;
-}
-
 .nutrition-title {
     font-family: var(--FF-YOUNG-SERIF);
     font-weight: var(--FW-400);
     color: var(--CLR-PRIMARY-NUTMEG);
-    margin-bottom: 10px;
+    margin-bottom: 0.625em;
 }
 
 .nutrition-desc {
     font-family: var(--FF-OUTFIT);
     color: var(--CLR-DARK-CHARCOAL);
-    margin-bottom: 20px;
-    font-size: 14px;
+    margin-bottom: 1.25em;
+    font-size: 0.875em;
 }
 
 .value {
     font-family: var(--FF-OUTFIT);
-    font-size: 15px;
+    font-size: 0.938em;
     color: var(--CLR-DARK-CHARCOAL);
     display: flex;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 1.25em;
 }
 
 .value span {
     font-weight: var(--FW-600);
-    margin-right: 200px;
-}
-
-.value p {
-    margin: 0;
-    text-align: left;
+    margin-right: 12.5em;
+    border: 2px solid red;
 }
