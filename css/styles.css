@@ -1,0 +1,204 @@
+/* Google Fonts Import */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+/* CSS Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+/* Global Styles */
+:root {
+    /* Colors */
+    --CLR-PRIMARY-NUTMEG: hsl(14, 45%, 36%);
+    --CLR-PRIMARY-DRASP: hsla(332, 51%, 32%);
+
+    --CLR-NEU-WHITE: hsl(0, 0%, 100%);
+    --CLR-NEU-ROSEWHITE: hsl(330, 100%, 98%);
+    --CLR-NEU-EGGSHELL: hsl(30, 54%, 90%);
+    --CLR-NEU-LIGHTGREY: hsl(30, 18%, 87%);
+    --CLR-WENGE-BROWN: hsl(30, 10%, 34%);
+    --CLR-DARK-CHARCOAL: hsl(24, 5%, 18%);
+    --CLR-LIGHT-PINK: rgba(255, 192, 203, 0.258);
+
+    /* Fonts */
+    --FF-YOUNG-SERIF: "Young Serif", serif;
+    --FF-OUTFIT: "Outfit", sans-serif;
+
+    --FS-P: 1em; /* 16px */
+
+    --FW-400: 400;
+    --FW-600: 600;
+    --FW-700: 700;
+
+    /* Styles */
+}
+
+/* General Styles */
+body {
+    background-color: var(--CLR-NEU-LIGHTGREY);
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Overall Recipe */
+.recipe-wrapper {
+    margin: 1.875em 0;
+    width: 40em;
+    background-color: var(--CLR-NEU-WHITE);
+    padding: 2.5em;
+    border-radius: 0.75em;
+}
+
+.recipe-hero {
+    padding: 0 0 1.25em 0;
+}
+
+.recipe-hero img {
+    border-radius: 0.75em;
+    margin-bottom: 1.25em;
+}
+
+.recipe-title {
+    font-family: var(--FF-YOUNG-SERIF);
+    font-weight: var(--FW-400);
+    margin-bottom: 0.3em;
+}
+
+.recipe-desc {
+    font-family: var(--FF-OUTFIT);
+    font-size: 14px;
+    color: var(--CLR-DARK-CHARCOAL);
+}
+
+/* Preperation Time Section */
+.recipe-prep {
+    background-color: var(--CLR-LIGHT-PINK);
+    border-radius: 0.75em;
+    padding: 25px;
+    margin-bottom: 20px;
+}
+
+.prep {
+    font-family: var(--FF-OUTFIT);
+    font-size: 18px;
+    font-weight: var(--FW-600);
+    color: var(--CLR-PRIMARY-DRASP);
+    margin-bottom: 5px;
+}
+
+.time {
+    color: var(--CLR-WENGE-BROWN);
+    font-family: var(--FF-OUTFIT);
+    margin-left: 20px;
+}
+
+.time li {
+    line-height: 1.7;
+    list-style: disc;
+}
+
+.time-title {
+    font-weight: var(--FW-600);
+    margin-left: 20px;
+    letter-spacing: 0.05em;
+}
+
+/* Ingredients Section */
+.ingredients-title {
+    font-family: var(--FF-YOUNG-SERIF);
+    color: var(--CLR-PRIMARY-NUTMEG);
+    font-weight: var(--FW-400);
+    margin-bottom: 20px;
+}
+
+.ingredients {
+    font-family: var(--FF-OUTFIT);
+    color: var(--CLR-DARK-CHARCOAL);
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.ingredients li {
+    line-height: 1.7;
+    padding-left: 10px;
+    color: var(--CLR-DARK-CHARCOAL);
+}
+
+/* Line Head Style */
+hr {
+    color: var(--CLR-NEU-EGGSHELL);
+    opacity: 45%;
+    margin-bottom: 20px;
+}
+
+/* Instructions Section */
+.instructions-title {
+    font-family: var(--FF-YOUNG-SERIF);
+    font-weight: var(--FW-400);
+    color: var(--CLR-PRIMARY-NUTMEG);
+    margin-bottom: 20px;
+}
+
+.cooking-instructions {
+    font-family: var(--FF-OUTFIT);
+    color: var(--CLR-DARK-CHARCOAL);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.cooking-instructions span {
+    font-weight: var(--FW-700);
+    color: var(--CLR-DARK-CHARCOAL);
+}
+
+.cooking-instructions li {
+    padding-left: 10px;
+}
+
+/* Nutritional Section */
+.nutrition-facts {
+    text-align: left;
+}
+
+.nutrition-title {
+    font-family: var(--FF-YOUNG-SERIF);
+    font-weight: var(--FW-400);
+    color: var(--CLR-PRIMARY-NUTMEG);
+    margin-bottom: 10px;
+}
+
+.nutrition-desc {
+    font-family: var(--FF-OUTFIT);
+    color: var(--CLR-DARK-CHARCOAL);
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.value {
+    font-family: var(--FF-OUTFIT);
+    font-size: 15px;
+    color: var(--CLR-DARK-CHARCOAL);
+    display: flex;
+    justify-content: space-between;
+    margin-left: 20px;
+}
+
+.value span {
+    font-weight: var(--FW-600);
+    margin-right: 200px;
+}
+
+.value p {
+    margin: 0;
+    text-align: left;
+}
