@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,27 +10,28 @@
   <title>Frontend Mentor | Recipe page</title>
   <link rel="stylesheet" href="./css/styles.css">
 </head>
+
 <body>
-  <div class="recipe-container">
-    <div class="recipe-wrapper">
+  <div class="container">
+    <header class="recipe-img">
+      <img src="./assets/images/image-omelette.jpeg" alt="">
+    </header>
 
-      <div class="recipe-hero">
-        <img src="./assets/images/image-omelette.jpeg" alt="Completed Omelette">
-        <h1 class="recipe-title">Simple Omelette Recipe</h1>
-        <p class="recipe-desc">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
-      </div>
+    <main class="recipe-information">
+      <h1>Simple Omelette Recipe</h1>
+      <p class="description">An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked to perfection, optionally filled with your choice of cheese, vegetables, or meats.</p>
 
-      <div class="recipe-prep">
-        <h2 class="prep">Preparation time</h2>
-        <ul class="time">
-          <li><span class="time-title">Total</span>: Approximately 10 minutes</li>
-          <li><span class="time-title">Preparation</span>: 5 minutes</li>
-          <li><span class="time-title">Cooking</span>: 5 minutes</li>
+      <section class="recipe-prep-time">
+        <h3>Preparation time</h3>
+        <ul>
+          <li><span>Total</span>: Approximately 10 minutes</li>
+          <li><span>Preparation</span>: 5 minutes</li>
+          <li><span>Cooking</span>: 5 minutes</li>
         </ul>
-      </div>
+      </section>
 
-      <div class="recipe-ingredients">
-        <h2 class="ingredients-title">Ingredients</h2>
+      <section class="recipe-step">
+        <h2>Ingredients</h2>
         <ul class="ingredients">
           <li>2-3 large eggs</li>
           <li>Salt, to taste</li>
@@ -37,37 +39,70 @@
           <li>1 tablespoon of butter or oil</li>
           <li>Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
         </ul>
-      </div>
+      </section>
 
       <hr>
 
-      <div class="instructions">
-        <h2 class="instructions-title">Instructions</h2>
-        <ol class="cooking-instructions">
-          <li><span>Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</li>
-          <li><span>Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</li>
-          <li><span>Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</li>
-          <li><span>Add fillings <i>(optional)</i></span>: When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</li>
-          <li><span>Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</li>
-          <li><span>Enjoy</span>: Serve hot, with additional salt and pepper if needed.</li>
-        </ol>
-      </div>
+      <section class="recipe-step">
+        <h2>Instructions</h2>
+        <div class="instructions">
+          <div class="item">
+            <div class="num">1.</div>
+            <p><span>Beat the eggs</span>: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. You can add a tablespoon of water or milk for a fluffier texture.</p>
+          </div>
+          <div class="item">
+            <div class="num">2.</div>
+            <p><span>Heat the pan</span>: Place a non-stick frying pan over medium heat and add butter or oil.</p>
+          </div>
+          <div class="item">
+            <div class="num">3.</div>
+            <p><span>Cook the omelette</span>: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure the eggs evenly coat the surface.</p>
+          </div>
+          <div class="item">
+            <div class="num">4.</div>
+            <p><span>Add fillings (optional)</span>: When the eggs begin to set at the edges but are still slightly runny in the middle, sprinkle your chosen fillings over one half of the omelette.</p>
+          </div>
+          <div class="item">
+            <div class="num">5.</div>
+            <p><span>Fold and serve</span>: As the omelette continues to cook, carefully lift one edge and fold it over the fillings. Let it cook for another minute, then slide it onto a plate.</p>
+          </div>
+          <div class="item">
+            <div class="num">6.</div>
+            <p><span>Enjoy</span>: Serve hot, with additional salt and pepper if needed.</p>
+          </div>
+        </div>
+      </section>
 
       <hr>
 
-      <div class="nutrition-facts">
-        <h2 class="nutrition-title">Nutrition</h2>
-        <p class="nutrition-desc">The table below shows nutritional values per serving without the additional fillings.</p>
-        <p class="value">Calories <span>277kcal</span></p>
-        <hr>
-        <p class="value">Carbs <span>0g</span></p>
-        <hr>
-        <p class="value">Protein <span>20g</span></p>
-        <hr>
-        <p class="value">Fat <span>22g</span></p>
-      </div>
-    </div>
+      <section class="nutrition-step">
+        <h2>Nutrition</h2>
+        <p class="values">The table below shows nutritional values per serving without the additional fillings.</p>
+
+        <div class="nutrition-table">
+          <div class="item">
+            <p>Calories</p>
+            <p class="amount">277kcal</p>
+          </div>
+          <div class="item">
+            <p>Carbs</p>
+            <p class="amount">0g</p>
+          </div>
+          <div class="item">
+            <p>Protein</p>
+            <p class="amount">20g</p>
+          </div>
+          <div class="item">
+            <p>Fat</p>
+            <p class="amount">22g</p>
+          </div>
+        </div>
+      </section>
+
+      
+    </main>
   </div>
 
 </body>
+
 </html>
